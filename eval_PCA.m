@@ -1,3 +1,4 @@
+% Endret i branch
 %
 % Modified on linux machine
 %
@@ -8,7 +9,7 @@ close all
 n=length(x)
 figure
 plot((1:length(x))/Fs,x)
-%resampler for å simulere lavere samplingsfrekvens
+%resampler for Ã¥ simulere lavere samplingsfrekvens
 Fs_old=Fs;
 Fs=20000;
 x=resample(x,Fs,Fs_old);
@@ -24,7 +25,7 @@ S2=S(:,end/2+1:end);
 S1=S(:,1:end/2);
 [~,n]=size(S);
 [~,n2]=size(S1);
-% estimerer kanal transferfunksjon for første del av tidssekvensen
+% estimerer kanal transferfunksjon for fÃ¸rste del av tidssekvensen
 S_channel=mean(S1,2);
 %kompenserer for estimert kanal transferfunksjon
 S1=S1-S_channel(:,ones(length(S1),1));
@@ -42,7 +43,7 @@ F=(0:128/2)*Fs/128;
 figure
 title('channel log-spectrum response estimat')
 plot(F,S_channel);
-%PCA basert på første del av tidssekvensen
+%PCA basert pÃ¥ fÃ¸rste del av tidssekvensen
 CC=S1*S1';
  [U,S_,V] = svd((CC));
 
