@@ -1,3 +1,4 @@
+enda en endring
 % ny endring
 %Endret i branch
 %
