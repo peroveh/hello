@@ -1,4 +1,5 @@
-% Endret i branch
+% ny endring
+%Endret i branch
 %
 % Modified on linux machine
 %
